@@ -6,4 +6,8 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
 
+router.post('/', function(req, res, next) {
+	res.send('hello world');
+});
+
 module.exports = router;
