@@ -1,8 +1,9 @@
+var config = require('../lib/config');
 //初始化 mongo
 var mongo = require('mongoose');
 
 //链接到数据库
-mongo.connect('mongodb://192.168.1.103/test');
+mongo.connect(config.mongodb_dsn || 'mongodb://127.0.0.1/todo');
 
 
 //获取 schema

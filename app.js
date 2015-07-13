@@ -7,7 +7,7 @@ var bodyParser = require('body-parser');
 
 
 //加载 todo
-require('./lib/todo');
+require('./models/todo');
 
 
 var index = require('./routes/index');
